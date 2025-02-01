@@ -65,4 +65,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Contact
 
 Meet Thakkar - meeth161@gmail.com
-[Project Link: https://github.com/yourusername/flight-status-board](https://flight-status-board-assignment.vercel.app/)
+
+## Live project link
+[Project Link: https://flight-status-board-assignment-n45df420e.vercel.app/](https://flight-status-board-assignment-n45df420e.vercel.app/)
