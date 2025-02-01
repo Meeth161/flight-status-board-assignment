@@ -1,51 +1,68 @@
-# React + TypeScript + Vite
+# Flight Status Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time flight tracking dashboard built with React, TypeScript, and Vite. The application displays live flight information including status updates, departure times, and detailed flight information.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time flight status updates
+- Interactive flight table with detailed information
+- Automatic data refresh every 30 seconds
+- Detailed view for individual flights
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Lucide React Icons
 
-- Configure the top-level `parserOptions` property like this:
+## 📦 Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone the repository:
+```bash
+git clone https://github.com/Meeth161/flight-status-board-assignment.git
+cd flight-status-board-assignment
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Install dependencies:
+```bash
+npm install
 ```
-# flight-status-board-assignment
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+## 📁 Project Structure
+
+```
+flight-status-board/
+├── src/
+│   ├── components/     # React components
+│   ├── types/         # TypeScript type definitions
+│   ├── lib/           # Utilities and helpers
+│   ├── services/      # API services
+│   └── assets/        # Static assets
+├── public/            # Public assets
+└── tests/             # Test files
+```
+
+## 🔑 API Reference
+
+The application uses the following endpoints:
+
+- `GET /flights` - Retrieve all flights
+- `GET /flights/:id` - Retrieve specific flight details
+
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Contact
+
+Meet Thakkar - meeth161@gmail.com
+[Project Link: https://github.com/yourusername/flight-status-board](https://flight-status-board-assignment.vercel.app/)
